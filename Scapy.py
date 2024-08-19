@@ -22,7 +22,6 @@ class IPHeader(Structure):
     
 
     def __new__(self,data=None):
-        ## lets make a structure of our packets captured 
         return self.from_buffer_copy(data)
       
     def __init__(self,data=None):
